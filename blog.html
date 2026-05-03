@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Opera Shalem Blog - Insights on opera, cultural infrastructure, and building Jerusalem's first permanent ensemble opera company.">
+    <meta name="author" content="Opera Shalem">
+    <meta property="og:type" content="blog">
+    <meta property="og:url" content="https://operashalem.com/blog.html">
+    <meta property="og:title" content="Blog | Opera Shalem">
+    <meta property="og:description" content="Stories, insights, and updates on building Jerusalem's first permanent ensemble opera company.">
+    <meta property="og:site_name" content="Opera Shalem">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <link rel="stylesheet" href="global.css">
+    
+    <title>Opera Shalem | Blog</title>
+
+    <style>
+    /* Page-specific styles for blog.html */
+    
+    body {
+        background: var(--off-white);
+        padding-top: 75px;
+    }
+
+    /* Page Header */
+    .page-header {
+        text-align: center;
+        margin-bottom: 3rem;
+        padding: 4rem 2rem;
+        background: var(--royal-blue);
+        margin-left: -100vw;
+        margin-right: -100vw;
+        padding-left: 100vw;
+        padding-right: 100vw;
+    }
+
+    .page-title {
+        font-family: 'ITC Benguiat Std', Georgia, serif;
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        color: var(--off-white);
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+
+    .page-subtitle {
+        font-size: 1.1rem;
+        color: var(--jerusalem-gold);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* Filters */
+    .filter-container {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 3rem 0;
+    }
+
+    .filter-btn {
+        background: transparent;
+        color: var(--royal-blue);
+        padding: 0.75rem 1.5rem;
+        border: 2px solid var(--royal-blue);
+        cursor: pointer;
+        font-family: 'ITC Benguiat Std', Georgia, serif;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transition: all 0.3s ease;
+    }
+
+    .filter-btn:hover {
+        background: var(--teal);
+        color: white;
+        border-color: var(--teal);
+    }
+
+    .filter-btn.active {
+        background: var(--royal-blue);
+        color: var(--off-white);
+    }
+
+    /* Blog Grid */
+    .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto 4rem;
+        padding: 0 2rem;
+    }
+
+    /* Blog Card */
+    .blog-card {
+        background: white;
+        border: 2px solid var(--border-color);
+        overflow: hidden;
+        transition: all 0.3s ease;
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .blog-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0,53,102,0.15);
+        border-color: var(--teal);
+    }
+
+    .blog-card-content {
+        padding: 2rem;
+    }
+
+    .blog-category {
+        display: inline-block;
+        background: var(--teal);
+        color: white;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+
+    .blog-card-title {
+        font-family: 'ITC Benguiat Std', Georgia, serif;
+        color: var(--royal-blue);
+        font-size: 1.5rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+        transition: color 0.3s ease;
+    }
+
+    .blog-card:hover .blog-card-title {
+        color: var(--teal);
+    }
+
+    .blog-card-excerpt {
+        color: var(--secondary-color);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+
+    .blog-card-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--secondary-color);
+        font-size: 0.85rem;
+    }
+
+    .read-more {
+        color: var(--teal);
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        transition: color 0.3s ease;
+    }
+
+    .blog-card:hover .read-more {
+        color: var(--jerusalem-gold);
+    }
+
+    /* No Posts */
+    .no-posts {
+        text-align: center;
+        padding: 4rem 2rem;
+        color: var(--secondary-color);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .blog-grid {
+            grid-template-columns: 1fr;
+            padding: 0 1rem;
+        }
+
+        .filter-container {
+            padding: 0 1rem;
+        }
+
+        .filter-btn {
+            font-size: 0.8rem;
+            padding: 0.6rem 1rem;
+        }
+    }
+    </style>
+</head>
+<body>
+    <!-- Navigation (from global.css) -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/opera shalem-02.png" alt="Opera Shalem Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#the-model">The Model</a></li>
+                <li><a href="index.html#cultural-tech">Cultural Tech</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="index.html#partner">Partner</a></li>
+            </ul>
+            <button class="hamburger" onclick="openMenu()" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="close-menu" onclick="closeMenu()" aria-label="Close menu">&times;</button>
+        <ul>
+            <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+            <li><a href="index.html#about" onclick="closeMenu()">About</a></li>
+            <li><a href="index.html#the-model" onclick="closeMenu()">The Model</a></li>
+            <li><a href="index.html#cultural-tech" onclick="closeMenu()">Cultural Tech</a></li>
+            <li><a href="blog.html" onclick="closeMenu()">Blog</a></li>
+            <li><a href="index.html#partner" onclick="closeMenu()">Partner</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1 class="page-title">Stories & Insights</h1>
+        <p class="page-subtitle">Exploring opera, culture, and the journey of building Jerusalem's first permanent ensemble opera company</p>
+    </header>
+
+    <!-- Category Filters -->
+    <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All Posts</button>
+        <button class="filter-btn" data-filter="vision">Vision</button>
+        <button class="filter-btn" data-filter="news">News</button>
+        <button class="filter-btn" data-filter="opera">Opera</button>
+        <button class="filter-btn" data-filter="culture">Culture</button>
+    </div>
+
+    <!-- Blog Grid -->
+    <div class="blog-grid" id="blogGrid">
+        <!-- Posts loaded via JavaScript -->
+    </div>
+
+    <!-- Footer (from global.css) -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <!-- Logo & Tagline -->
+            <div class="footer-section">
+                <img src="images/opera shalem-02.png" alt="Opera Shalem Logo" class="footer-logo">
+                <p class="footer-tagline">Building Jerusalem's first permanent ensemble opera company</p>
+            </div>
+
+            <!-- Connect -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Connect</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/operashalem" target="_blank" rel="noopener" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/operashalem" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/operashalem" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                    </a>
+                    <a href="https://x.com/operashalem" target="_blank" rel="noopener" aria-label="X (formerly Twitter)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Links -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Contact</h3>
+                <p class="footer-contact">
+                    <a href="/cdn-cgi/l/email-protection#2b42454d446b445b4e594a58434a474e4605484446"><span class="__cf_email__" data-cfemail="a5cccbc3cae5cad5c0d7c4d6cdc4c9c0c88bc6cac8">[email&#160;protected]</span></a><br>
+                    Jerusalem, Israel
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Opera Shalem. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Mobile menu functions (from global.css pattern)
+        function openMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.remove('open');
+            setTimeout(() => {
+                document.body.style.overflow = '';
+            }, 100);
+        }
+
+        // Blog functionality
+        let allPosts = [];
+        let currentFilter = 'all';
+
+        // Fallback blog data (inline)
+        const fallbackPosts = [
+            {
+                "id": "cultural-significance",
+                "title": "The Cultural Significance of Opera Shalem in Jerusalem",
+                "excerpt": "Why Jerusalem needs a permanent opera company, and what it means for Israeli cultural life.",
+                "date": "2025-11-12",
+                "category": "vision",
+                "tags": ["Jerusalem", "cultural infrastructure", "vision"],
+                "featured": true,
+                "filename": "cultural-significance.html",
+                "readTime": 6
+            },
+            {
+                "id": "your-voice-shaped-our-vision",
+                "title": "Your Voice Shaped Our Vision",
+                "excerpt": "How community feedback transformed Opera Shalem's mission and approach.",
+                "date": "2026-02-10",
+                "category": "news",
+                "tags": ["community", "feedback", "mission"],
+                "featured": true,
+                "filename": "your-voice-shaped-our-vision.html",
+                "readTime": 3
+            },
+            {
+                "id": "why-jerusalem",
+                "title": "Why Jerusalem?",
+                "excerpt": "The unique cultural, historical, and artistic case for building an opera company in Israel's capital.",
+                "date": "2026-01-28",
+                "category": "vision",
+                "tags": ["Jerusalem", "vision", "cultural identity"],
+                "featured": false,
+                "filename": "why-jerusalem.html",
+                "readTime": 3
+            },
+            {
+                "id": "what-is-opera",
+                "title": "What Is Opera (And Why It Still Matters)",
+                "excerpt": "A beginner's guide to understanding opera as an art form and cultural force.",
+                "date": "2025-06-09",
+                "category": "opera",
+                "tags": ["education", "opera basics", "art form"],
+                "featured": false,
+                "filename": "what-is-opera.html",
+                "readTime": 3
+            },
+            {
+                "id": "ensemble-model",
+                "title": "The Ensemble Model: From Dressing Room to Stage",
+                "excerpt": "Why Opera Shalem is building a resident company rather than hiring freelancers.",
+                "date": "2025-05-15",
+                "category": "vision",
+                "tags": ["ensemble", "institutional model", "sustainability"],
+                "featured": false,
+                "filename": "ensemble-model.html",
+                "readTime": 3
+            },
+            {
+                "id": "cultural-infrastructure",
+                "title": "Opera as Cultural Infrastructure: Filling the Gap in Jerusalem",
+                "excerpt": "How permanent arts institutions strengthen communities and economies.",
+                "date": "2025-05-28",
+                "category": "vision",
+                "tags": ["infrastructure", "Jerusalem", "cultural policy"],
+                "featured": false,
+                "filename": "cultural-infrastructure.html",
+                "readTime": 4
+            },
+            {
+                "id": "when-lions-rise",
+                "title": "When Lions Rise: Jewish Culture in a Time of Conflict",
+                "excerpt": "Why cultural expression matters most when the world wants us silent.",
+                "date": "2025-06-17",
+                "category": "culture",
+                "tags": ["Jewish culture", "resilience", "identity"],
+                "featured": false,
+                "filename": "when-lions-rise.html",
+                "readTime": 3
+            },
+            {
+                "id": "what-makes-jewish-opera-jewish",
+                "title": "What Makes Jewish Opera 'Jewish'? Beyond Language and Subject Matter",
+                "excerpt": "Exploring the musical, theatrical, and cultural DNA of Jewish operatic expression.",
+                "date": "2025-08-15",
+                "category": "culture",
+                "tags": ["Jewish music", "cultural identity", "repertoire"],
+                "featured": false,
+                "filename": "what-makes-jewish-opera-jewish.html",
+                "readTime": 4
+            },
+            {
+                "id": "artist-brain-drain",
+                "title": "The Artist Brain Drain: Why Israel Loses Classical Musicians",
+                "excerpt": "How lack of institutional support drives Israeli talent abroad—and how Opera Shalem aims to reverse it.",
+                "date": "2025-11-20",
+                "category": "vision",
+                "tags": ["aliyah", "artist support", "institutional model"],
+                "featured": false,
+                "filename": "artist-brain-drain.html",
+                "readTime": 3
+            },
+            {
+                "id": "repertoire-planning",
+                "title": "Repertoire Planning: How Opera Companies Choose What to Perform",
+                "excerpt": "The artistic, financial, and cultural considerations behind season programming.",
+                "date": "2026-03-01",
+                "category": "opera",
+                "tags": ["repertoire", "programming", "opera education"],
+                "featured": true,
+                "filename": "repertoire-planning.html",
+                "readTime": 5
+            },
+            {
+                "id": "year-one-learnings",
+                "title": "What We Learned in Year One",
+                "excerpt": "Reflections on Opera Shalem's first year: challenges, pivots, and unexpected insights.",
+                "date": "2025-12-15",
+                "category": "news",
+                "tags": ["milestones", "reflection", "transparency"],
+                "featured": true,
+                "filename": "year-one-learnings.html",
+                "readTime": 6
+            },
+            {
+                "id": "development-roadmap",
+                "title": "From Seed Phase to Foundations: Opera Shalem's Development Roadmap",
+                "excerpt": "Our phased approach to building Jerusalem's opera company from vision to opening night.",
+                "date": "2026-01-20",
+                "category": "news",
+                "tags": ["roadmap", "planning", "transparency"],
+                "featured": true,
+                "filename": "development-roadmap.html",
+                "readTime": 6
+            }
+        ];
+
+        // Load and display blog posts (with fallback)
+        fetch('blogs.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(posts => {
+                // Sort by date, newest first (reverse chronological)
+                allPosts = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+                renderPosts();
+            })
+            .catch(error => {
+                console.log('Using fallback data. Fetch error:', error.message);
+                // Use fallback data
+                allPosts = fallbackPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+                renderPosts();
+            });
+
+        // Render posts based on current filter
+        function renderPosts() {
+            const grid = document.getElementById('blogGrid');
+            
+            const filteredPosts = currentFilter === 'all' 
+                ? allPosts 
+                : allPosts.filter(post => post.category === currentFilter);
+
+            if (filteredPosts.length === 0) {
+                grid.innerHTML = `
+                    <div class="no-posts">
+                        <p>No posts found in this category.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            grid.innerHTML = filteredPosts.map(post => {
+                const date = new Date(post.date).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric'
+                });
+
+                return `
+                    <a href="blog/${post.filename}" class="blog-card">
+                        <div class="blog-card-content">
+                            <div class="blog-category">${post.category}</div>
+                            <h2 class="blog-card-title">${post.title}</h2>
+                            <p class="blog-card-excerpt">${post.excerpt}</p>
+                            <div class="blog-card-meta">
+                                <span>${date} · ${post.readTime} min read</span>
+                                <span class="read-more">Read More →</span>
+                            </div>
+                        </div>
+                    </a>
+                `;
+            }).join('');
+        }
+
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.filter;
+                renderPosts();
+            });
+        });
+    </script>
+</body>
+</html>

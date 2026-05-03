@@ -1,0 +1,50 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "images/blog"
+public_folder: "images/blog"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options: ["vision", "opera", "news", "culture"]
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+        hint: "Brief summary shown on blog cards (150-200 characters)"
+      - label: "Featured Post"
+        name: "featured"
+        widget: "boolean"
+        default: false
+      - label: "Featured Image"
+        name: "image"
+        widget: "image"
+        required: false
+      - label: "Body"
+        name: "content"
+        widget: "markdown"
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+      - label: "SEO Description"
+        name: "meta_description"
+        widget: "string"
+        required: false
+        hint: "150-160 characters for search engines"

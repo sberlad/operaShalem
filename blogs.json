@@ -1,0 +1,134 @@
+[
+  {
+    "id": "cultural-significance",
+    "title": "The Cultural Significance of Opera Shalem in Jerusalem",
+    "excerpt": "Why Jerusalem needs a permanent opera company, and what it means for Israeli cultural life.",
+    "date": "2025-11-12",
+    "category": "vision",
+    "tags": ["Jerusalem", "cultural infrastructure", "vision"],
+    "featured": true,
+    "filename": "cultural-significance.html",
+    "readTime": 6
+  },
+  {
+    "id": "your-voice-shaped-our-vision",
+    "title": "Your Voice Shaped Our Vision",
+    "excerpt": "How community feedback transformed Opera Shalem's mission and approach.",
+    "date": "2026-02-10",
+    "category": "news",
+    "tags": ["community", "feedback", "mission"],
+    "featured": true,
+    "filename": "your-voice-shaped-our-vision.html",
+    "readTime": 3
+  },
+  {
+    "id": "why-jerusalem",
+    "title": "Why Jerusalem?",
+    "excerpt": "The unique cultural, historical, and artistic case for building an opera company in Israel's capital.",
+    "date": "2026-01-28",
+    "category": "vision",
+    "tags": ["Jerusalem", "vision", "cultural identity"],
+    "featured": false,
+    "filename": "why-jerusalem.html",
+    "readTime": 3
+  },
+  {
+    "id": "what-is-opera",
+    "title": "What Is Opera (And Why It Still Matters)",
+    "excerpt": "A beginner's guide to understanding opera as an art form and cultural force.",
+    "date": "2025-06-09",
+    "category": "opera",
+    "tags": ["education", "opera basics", "art form"],
+    "featured": false,
+    "filename": "what-is-opera.html",
+    "readTime": 3
+  },
+  {
+    "id": "ensemble-model",
+    "title": "The Ensemble Model: From Dressing Room to Stage",
+    "excerpt": "Why Opera Shalem is building a resident company rather than hiring freelancers.",
+    "date": "2025-05-15",
+    "category": "vision",
+    "tags": ["ensemble", "institutional model", "sustainability"],
+    "featured": false,
+    "filename": "ensemble-model.html",
+    "readTime": 3
+  },
+  {
+    "id": "cultural-infrastructure",
+    "title": "Opera as Cultural Infrastructure: Filling the Gap in Jerusalem",
+    "excerpt": "How permanent arts institutions strengthen communities and economies.",
+    "date": "2025-05-28",
+    "category": "vision",
+    "tags": ["infrastructure", "Jerusalem", "cultural policy"],
+    "featured": false,
+    "filename": "cultural-infrastructure.html",
+    "readTime": 4
+  },
+  {
+    "id": "when-lions-rise",
+    "title": "When Lions Rise: Jewish Culture in a Time of Conflict",
+    "excerpt": "Why cultural expression matters most when the world wants us silent.",
+    "date": "2025-06-17",
+    "category": "culture",
+    "tags": ["Jewish culture", "resilience", "identity"],
+    "featured": false,
+    "filename": "when-lions-rise.html",
+    "readTime": 3
+  },
+  {
+    "id": "what-makes-jewish-opera-jewish",
+    "title": "What Makes Jewish Opera 'Jewish'? Beyond Language and Subject Matter",
+    "excerpt": "Exploring the musical, theatrical, and cultural DNA of Jewish operatic expression.",
+    "date": "2025-08-15",
+    "category": "culture",
+    "tags": ["Jewish music", "cultural identity", "repertoire"],
+    "featured": false,
+    "filename": "what-makes-jewish-opera-jewish.html",
+    "readTime": 4
+  },
+  {
+    "id": "artist-brain-drain",
+    "title": "The Artist Brain Drain: Why Israel Loses Classical Musicians",
+    "excerpt": "How lack of institutional support drives Israeli talent abroad—and how Opera Shalem aims to reverse it.",
+    "date": "2025-11-20",
+    "category": "vision",
+    "tags": ["aliyah", "artist support", "institutional model"],
+    "featured": false,
+    "filename": "artist-brain-drain.html",
+    "readTime": 3
+  },
+  {
+    "id": "repertoire-planning",
+    "title": "Repertoire Planning: How Opera Companies Choose What to Perform",
+    "excerpt": "The artistic, financial, and cultural considerations behind season programming.",
+    "date": "2026-03-01",
+    "category": "opera",
+    "tags": ["repertoire", "programming", "opera education"],
+    "featured": true,
+    "filename": "repertoire-planning.html",
+    "readTime": 5
+  },
+  {
+    "id": "year-one-learnings",
+    "title": "What We Learned in Year One",
+    "excerpt": "Reflections on Opera Shalem's first year: challenges, pivots, and unexpected insights.",
+    "date": "2025-12-15",
+    "category": "news",
+    "tags": ["milestones", "reflection", "transparency"],
+    "featured": true,
+    "filename": "year-one-learnings.html",
+    "readTime": 6
+  },
+  {
+    "id": "development-roadmap",
+    "title": "From Seed Phase to Foundations: Opera Shalem's Development Roadmap",
+    "excerpt": "Our phased approach to building Jerusalem's opera company from vision to opening night.",
+    "date": "2026-01-20",
+    "category": "news",
+    "tags": ["roadmap", "planning", "transparency"],
+    "featured": true,
+    "filename": "development-roadmap.html",
+    "readTime": 6
+  }
+]

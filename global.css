@@ -1,0 +1,480 @@
+/* ===================================
+   OPERA SHALEM - GLOBAL STYLES
+   Shared across all pages
+   =================================== */
+
+/* =========================
+   FONT FACES
+   ========================= */
+
+@import url('https://fonts.cdnfonts.com/css/itc-benguiat-std');
+
+/* =========================
+   CSS RESET
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   ROOT VARIABLES
+   ========================= */
+
+:root {
+    /* Brand Colors */
+    --royal-blue: #003566;
+    --jerusalem-gold: #D4AF37;
+    --teal: #008080;
+    --off-white: #FFFFF0;
+    --brown: #5C4033;
+    
+    /* UI Colors */
+    --bg-white: #ffffff;
+    --bg-light: #f8f8f8;
+    --bg-cream: #faf9f6;
+    --border-color: #e0e0e0;
+    
+    /* Text Colors */
+    --primary-color: #1a1a1a;
+    --secondary-color: #4a4a4a;
+    --light-gray: #888;
+    
+    /* Transitions */
+    --transition: all 0.3s ease;
+}
+
+/* =========================
+   BASE STYLES
+   ========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'ITC Benguiat Std', Georgia, 'Times New Roman', serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--primary-color);
+    background-color: var(--bg-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'ITC Benguiat Std', Georgia, 'Times New Roman', serif;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-bottom: 2rem;
+    color: var(--royal-blue);
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--jerusalem-gold);
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+p {
+    margin-bottom: 1.25rem;
+}
+
+a {
+    color: var(--royal-blue);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--teal);
+}
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--royal-blue);
+    border-bottom: 2px solid var(--jerusalem-gold);
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 56px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--off-white);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--jerusalem-gold);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+    background: none;
+    border: none;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--off-white);
+    transition: var(--transition);
+}
+
+/* Mobile Nav Overlay */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--royal-blue);
+    z-index: 9999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.mobile-nav.open {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.mobile-nav a {
+    color: var(--off-white);
+    font-family: 'ITC Benguiat Std', Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    transition: var(--transition);
+}
+
+.mobile-nav a:hover {
+    color: var(--jerusalem-gold);
+}
+
+.mobile-nav-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: 2px solid rgba(255,255,250,0.4);
+    color: var(--off-white);
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+    z-index: 10000;
+    padding: 0.5rem 0.9rem;
+    border-radius: 4px;
+}
+
+/* =========================
+   LAYOUT UTILITIES
+   ========================= */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section {
+    padding: 6rem 0;
+    background-color: var(--bg-white);
+}
+
+.alt-bg {
+    background: linear-gradient(to bottom, var(--bg-light) 0%, var(--off-white) 100%);
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--royal-blue);
+    color: var(--off-white);
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--teal);
+    color: var(--off-white);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--royal-blue);
+    color: var(--royal-blue);
+}
+
+.btn-outline:hover {
+    background-color: var(--royal-blue);
+    color: var(--off-white);
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background: var(--royal-blue);
+    color: var(--off-white);
+    padding: 4rem 0 2rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer-section h4 {
+    color: var(--jerusalem-gold);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.footer-section p {
+    color: var(--off-white);
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.footer-logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.social-links a {
+    color: var(--off-white);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    opacity: 1;
+    color: var(--jerusalem-gold);
+    transform: translateY(-2px);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    color: var(--off-white);
+    opacity: 0.8;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    color: var(--jerusalem-gold);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 250, 0.1);
+    color: var(--off-white);
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--off-white);
+}
+
+footer a:hover {
+    color: var(--jerusalem-gold);
+}
+
+/* =========================
+   RESPONSIVE BREAKPOINTS
+   ========================= */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .section {
+        padding: 4rem 0;
+    }
+    
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        flex-direction: row;
+        padding: 0.75rem 1rem;
+    }
+    
+    .logo img {
+        height: 48px;
+    }
+}
+
+/* =========================
+   ACCESSIBILITY
+   ========================= */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* Focus visible for keyboard navigation */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--jerusalem-gold);
+    outline-offset: 2px;
+}
+
+/* =========================
+   PRINT STYLES
+   ========================= */
+
+@media print {
+    .main-nav,
+    .mobile-nav,
+    .hamburger,
+    footer {
+        display: none;
+    }
+    
+    .section {
+        page-break-inside: avoid;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+}
