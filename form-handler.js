@@ -1,5 +1,5 @@
 // Form submission handler for Opera Shalem contact form
-// Replace the existing form handler in index.html with this code
+// Loaded by index.html; posts to contact-form.php and expects a JSON reply
 
 const partnerForm = document.getElementById('partnerForm');
 if (partnerForm) {
@@ -19,6 +19,7 @@ if (partnerForm) {
         try {
             const response = await fetch('contact-form.php', {
                 method: 'POST',
+                headers: { 'Accept': 'application/json' },
                 body: formData
             });
             

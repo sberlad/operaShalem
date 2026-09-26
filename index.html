@@ -25,8 +25,8 @@
       "alternateName": "Opera Shalem - Jerusalem Opera Company",
       "description": "Building Jerusalem's first permanent ensemble opera company. Cultural infrastructure serving Jerusalem and the Jewish people.",
       "url": "https://operashalem.com",
-      "logo": "https://operashalem.com/images/opera shalem-02.png",
-      "image": "https://operashalem.com/images/opera shalem-02.png",
+      "logo": "https://operashalem.com/images/opera-shalem-logo.png",
+      "image": "https://operashalem.com/images/opera-shalem-logo.png",
       "email": "info@operashalem.com",
       "address": {
         "@type": "PostalAddress",
@@ -113,7 +113,7 @@
         }
 
         .hero-logo {
-            width: min(500px, 85vw);;
+            width: min(500px, 85vw);
             max-width: 500px;
             height: auto;
             margin-bottom: 3rem;
@@ -135,7 +135,7 @@
             margin-bottom: 3rem;
             font-weight: 400;
             letter-spacing: 0.04em;
-            font-family: 'ITC Benguiat', Georgia, serif;
+            font-family: 'ITC Benguiat Std', Georgia, serif;
             position: relative;
             z-index: 1;
         }
@@ -382,7 +382,6 @@
         .form-group input:focus,
         .form-group select:focus,
         .form-group textarea:focus {
-            outline: none;
             border-color: var(--royal-blue);
         }
 
@@ -456,7 +455,7 @@
     <nav class="main-nav">
         <div class="nav-container">
             <a href="#home" class="logo">
-                <img src="images/opera shalem-02.png" alt="Opera Shalem">
+                <img src="images/opera-shalem-logo.png" alt="Opera Shalem">
             </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -488,7 +487,7 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <img src="images/opera shalem-02.png" alt="Opera Shalem — Lion playing harp" class="hero-logo">
+            <img src="images/opera-shalem-logo.png" alt="Opera Shalem — Lion playing harp" class="hero-logo">
             <h1>Opera Shalem</h1>
             <div class="hero-divider"></div>
             <p class="hero-subtitle">Cultural infrastructure serving Jerusalem<br>and the Jewish people</p>
@@ -682,7 +681,7 @@
                 
                 <div class="contact-form">
                     <h3>Get in Touch</h3>
-                    <form id="partnerForm">
+                    <form id="partnerForm" action="contact-form.php" method="post">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
@@ -709,6 +708,12 @@
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
                         
+                        <!-- Honeypot for spam bots; hidden from people and screen readers -->
+                        <div aria-hidden="true" style="position: absolute; left: -9999px;">
+                            <label for="website">Leave this field empty</label>
+                            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+
                         <button type="submit" class="submit-btn">Submit</button>
                     </form>
                 </div>
@@ -720,7 +725,7 @@
     <div class="container">
         <div class="footer-content">
             <div class="footer-section">
-                <img src="images/opera shalem-02.png" alt="Opera Shalem" class="footer-logo">
+                <img src="images/opera-shalem-logo.png" alt="Opera Shalem" class="footer-logo">
                 <p>Cultural infrastructure serving Jerusalem and the Jewish people</p>
             </div>
             
@@ -761,7 +766,7 @@
             
             <div class="footer-section">
                 <h4>Contact</h4>
-                <p><a href="/cdn-cgi/l/email-protection#0f666169604f607f6a7d6e7c676e636a62216c6062"><span class="__cf_email__" data-cfemail="cea7a0a8a18ea1beabbcafbda6afa2aba3e0ada1a3">[email&#160;protected]</span></a></p>
+                <p><a href="mailto:info@operashalem.com">info@operashalem.com</a></p>
                 <p>Jerusalem, Israel</p>
             </div>
         </div>
@@ -772,7 +777,7 @@
     </div>
 </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script>
         // Hamburger menu
         const hamburger = document.getElementById('hamburger');
         const mobileNav = document.getElementById('mobileNav');
@@ -867,6 +872,7 @@
         //     section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         //     observer.observe(section);
         // });
-
-        // Show hero immediately
-   
+    </script>
+    <script src="form-handler.js"></script>
+</body>
+</html>

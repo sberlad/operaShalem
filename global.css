@@ -232,7 +232,17 @@ a:hover {
     color: var(--jerusalem-gold);
 }
 
-.mobile-nav-close {
+/* Blog pages wrap their mobile links in a <ul> */
+.mobile-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.mobile-nav-close,
+.mobile-nav .close-menu {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -452,7 +462,10 @@ footer a:hover {
 
 /* Focus visible for keyboard navigation */
 a:focus-visible,
-button:focus-visible {
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
     outline: 2px solid var(--jerusalem-gold);
     outline-offset: 2px;
 }

@@ -2,9 +2,11 @@
 // SMTP Contact Form Handler for Opera Shalem
 // Uses PHPMailer for reliable email delivery
 
-// Enable error reporting for debugging (disable in production)
-ini_set('display_errors', 1);
+// Never show PHP errors to visitors; they go to the server error log
+ini_set('display_errors', 0);
 error_reporting(E_ALL);
+
+header('Content-Type: application/json; charset=utf-8');
 
 // Only allow POST requests
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -54,7 +56,7 @@ try {
     $mail->Host       = 'smtp.ionos.com'; // IONOS SMTP server
     $mail->SMTPAuth   = true;
     $mail->Username   = 'contactform@operashalem.com'; // Your IONOS email
-    $mail->Password   = 'YOUR_EMAIL_PASSWORD_HERE';    // Your email password
+    $mail->Password   = getenv('SMTP_PASSWORD');       // Set on the server; never commit the real password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
     $mail->CharSet    = 'UTF-8';

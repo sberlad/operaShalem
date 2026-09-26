@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Opera Shalem Blog - Insights on opera, cultural infrastructure, and building Jerusalem's first permanent ensemble opera company.">
     <meta name="author" content="Opera Shalem">
-    <meta property="og:type" content="blog">
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://operashalem.com/blog.html">
     <meta property="og:title" content="Blog | Opera Shalem">
     <meta property="og:description" content="Stories, insights, and updates on building Jerusalem's first permanent ensemble opera company.">
@@ -27,7 +27,11 @@
     
     body {
         background: var(--off-white);
-        padding-top: 75px;
+        padding-top: 90px; /* matches .main-nav height */
+    }
+
+    @media (max-width: 480px) {
+        body { padding-top: 74px; }
     }
 
     /* Page Header */
@@ -36,10 +40,6 @@
         margin-bottom: 3rem;
         padding: 4rem 2rem;
         background: var(--royal-blue);
-        margin-left: -100vw;
-        margin-right: -100vw;
-        padding-left: 100vw;
-        padding-right: 100vw;
     }
 
     .page-title {
@@ -202,13 +202,13 @@
     <nav class="main-nav">
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="images/opera shalem-02.png" alt="Opera Shalem Logo">
+                <img src="images/opera-shalem-logo.png" alt="Opera Shalem Logo">
             </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#the-model">The Model</a></li>
-                <li><a href="index.html#cultural-tech">Cultural Tech</a></li>
+                <li><a href="index.html#model">The Model</a></li>
+                <li><a href="index.html#tech">Cultural Tech</a></li>
                 <li><a href="blog.html" class="active">Blog</a></li>
                 <li><a href="index.html#partner">Partner</a></li>
             </ul>
@@ -226,8 +226,8 @@
         <ul>
             <li><a href="index.html" onclick="closeMenu()">Home</a></li>
             <li><a href="index.html#about" onclick="closeMenu()">About</a></li>
-            <li><a href="index.html#the-model" onclick="closeMenu()">The Model</a></li>
-            <li><a href="index.html#cultural-tech" onclick="closeMenu()">Cultural Tech</a></li>
+            <li><a href="index.html#model" onclick="closeMenu()">The Model</a></li>
+            <li><a href="index.html#tech" onclick="closeMenu()">Cultural Tech</a></li>
             <li><a href="blog.html" onclick="closeMenu()">Blog</a></li>
             <li><a href="index.html#partner" onclick="closeMenu()">Partner</a></li>
         </ul>
@@ -258,7 +258,7 @@
         <div class="footer-content">
             <!-- Logo & Tagline -->
             <div class="footer-section">
-                <img src="images/opera shalem-02.png" alt="Opera Shalem Logo" class="footer-logo">
+                <img src="images/opera-shalem-logo.png" alt="Opera Shalem Logo" class="footer-logo">
                 <p class="footer-tagline">Building Jerusalem's first permanent ensemble opera company</p>
             </div>
 
@@ -295,7 +295,7 @@
             <div class="footer-section">
                 <h3 class="footer-heading">Contact</h3>
                 <p class="footer-contact">
-                    <a href="/cdn-cgi/l/email-protection#2b42454d446b445b4e594a58434a474e4605484446"><span class="__cf_email__" data-cfemail="a5cccbc3cae5cad5c0d7c4d6cdc4c9c0c88bc6cac8">[email&#160;protected]</span></a><br>
+                    <a href="mailto:info@operashalem.com">info@operashalem.com</a><br>
                     Jerusalem, Israel
                 </p>
             </div>
@@ -306,7 +306,7 @@
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script>
         // Mobile menu functions (from global.css pattern)
         function openMenu() {
             const mobileNav = document.getElementById('mobileNav');

@@ -30,7 +30,7 @@ body {
     background: var(--bg-light);
     color: var(--text-dark);
     line-height: 1.7;
-    padding-top: 75px; /* Account for fixed nav */
+    padding-top: 90px; /* Account for fixed nav (.main-nav height) */
 }
 
 /* Blog Post Container */
@@ -228,7 +228,18 @@ body {
     transform: translateX(-5px);
 }
 
+/* global.css adds a gold bar under every h2; posts already use a full-width border */
+.post-content h2::after {
+    display: none;
+}
+
 /* Responsive */
+@media (max-width: 480px) {
+    body {
+        padding-top: 74px;
+    }
+}
+
 @media (max-width: 768px) {
     .blog-post-page {
         padding: 1.5rem 1rem;
