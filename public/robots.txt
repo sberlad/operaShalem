@@ -1,29 +1,33 @@
-# robots.txt for Opera Shalem
+# robots.txt for operashalem.com
+# Search engines and AI search tools may crawl and cite the site.
+# Crawlers that collect content to train AI models may not.
 
 User-agent: *
 Allow: /
 
-# Allow AI crawlers
+# AI search and answers on a user's request: allowed
+User-agent: OAI-SearchBot
 User-agent: ChatGPT-User
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
+User-agent: Claude-SearchBot
+User-agent: Claude-User
 User-agent: PerplexityBot
+User-agent: Perplexity-User
 Allow: /
 
+# AI model training: not allowed
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
 User-agent: Claude-Web
-Allow: /
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+User-agent: Bytespider
+User-agent: meta-externalagent
+User-agent: cohere-ai
+User-agent: Amazonbot
+User-agent: Diffbot
+User-agent: omgili
+Disallow: /
 
-# Sitemap location
 Sitemap: https://operashalem.com/sitemap.xml
-
-# Crawl delay (optional - helps prevent server overload)
-Crawl-delay: 1
