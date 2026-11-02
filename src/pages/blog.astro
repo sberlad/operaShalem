@@ -1,0 +1,262 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const filters = [
+  { value: 'all', label: 'All Posts' },
+  { value: 'vision', label: 'Vision' },
+  { value: 'news', label: 'News' },
+  { value: 'opera', label: 'Opera' },
+  { value: 'culture', label: 'Culture' },
+];
+
+const formatDate = (date: Date) =>
+  date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
+---
+
+<Base
+  title="Opera Shalem | Blog"
+  description="Opera Shalem Blog - Insights on opera, cultural infrastructure, and building Jerusalem's first permanent ensemble opera company."
+  current="blog"
+>
+  <main>
+    <header class="page-header">
+      <h1 class="page-title">Stories &amp; Insights</h1>
+      <p class="page-subtitle">Exploring opera, culture, and the journey of building Jerusalem's first permanent ensemble opera company</p>
+    </header>
+
+    <div class="filter-container" role="group" aria-label="Filter posts by category">
+      {filters.map((filter, index) => (
+        <button class:list={['filter-btn', { active: index === 0 }]} data-filter={filter.value} aria-pressed={index === 0 ? 'true' : 'false'}>
+          {filter.label}
+        </button>
+      ))}
+    </div>
+
+    <div class="blog-grid">
+      {posts.map((post) => (
+        <a href={`/blog/${post.id}`} class="blog-card" data-category={post.data.category}>
+          <div class="blog-card-content">
+            <div class="blog-category">{post.data.category}</div>
+            <h2 class="blog-card-title">{post.data.title}</h2>
+            <p class="blog-card-excerpt">{post.data.excerpt}</p>
+            <div class="blog-card-meta">
+              <span><time datetime={post.data.date.toISOString().slice(0, 10)}>{formatDate(post.data.date)}</time> · {post.data.readTime} min read</span>
+              <span class="read-more">Read More →</span>
+            </div>
+          </div>
+        </a>
+      ))}
+      <p class="no-posts" hidden>No posts found in this category.</p>
+    </div>
+  </main>
+</Base>
+
+<style>
+main {
+    background: var(--off-white);
+    padding-bottom: 1rem;
+}
+
+/* Page Header */
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 4rem 2rem;
+    background: var(--royal-blue);
+}
+
+.page-title {
+    font-family: 'ITC Benguiat Std', Georgia, serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--off-white);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.page-subtitle {
+    font-size: 1.1rem;
+    color: var(--jerusalem-gold);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Filters */
+.filter-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+}
+
+.filter-btn {
+    background: transparent;
+    color: var(--royal-blue);
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--royal-blue);
+    cursor: pointer;
+    font-family: 'ITC Benguiat Std', Georgia, serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background: var(--teal);
+    color: white;
+    border-color: var(--teal);
+}
+
+.filter-btn.active {
+    background: var(--royal-blue);
+    color: var(--off-white);
+}
+
+/* Blog Grid */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    padding: 0 2rem;
+}
+
+/* Blog Card */
+.blog-card {
+    background: white;
+    border: 2px solid var(--border-color);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,53,102,0.15);
+    border-color: var(--teal);
+}
+
+.blog-card-content {
+    padding: 2rem;
+}
+
+.blog-category {
+    display: inline-block;
+    background: var(--teal);
+    color: white;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.blog-card-title {
+    font-family: 'ITC Benguiat Std', Georgia, serif;
+    color: var(--royal-blue);
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.blog-card:hover .blog-card-title {
+    color: var(--teal);
+}
+
+.blog-card-excerpt {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.blog-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+}
+
+.read-more {
+    color: var(--teal);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease;
+}
+
+.blog-card:hover .read-more {
+    color: var(--jerusalem-gold);
+}
+
+/* No Posts */
+.no-posts {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--secondary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .filter-container {
+        padding: 0 1rem;
+    }
+
+    .filter-btn {
+        font-size: 0.8rem;
+        padding: 0.6rem 1rem;
+    }
+}
+
+/* The global h2 styles add a gold bar under every h2 */
+.blog-card-title::after {
+    display: none;
+}
+
+.blog-card-title {
+    padding-bottom: 0;
+}
+
+/* Cards hidden by the category filter */
+.blog-card[hidden] {
+    display: none;
+}
+</style>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+  const cards = document.querySelectorAll<HTMLElement>('.blog-card');
+  const empty = document.querySelector<HTMLElement>('.no-posts')!;
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter;
+      buttons.forEach((b) => {
+        const active = b === button;
+        b.classList.toggle('active', active);
+        b.setAttribute('aria-pressed', String(active));
+      });
+      let shown = 0;
+      cards.forEach((card) => {
+        const match = filter === 'all' || card.dataset.category === filter;
+        card.hidden = !match;
+        if (match) shown++;
+      });
+      empty.hidden = shown > 0;
+    });
+  });
+</script>

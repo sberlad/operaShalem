@@ -1,0 +1,657 @@
+---
+import Base from '../layouts/Base.astro';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "PerformingGroup",
+  "name": "Opera Shalem",
+  "alternateName": "Opera Shalem - Jerusalem Opera Company",
+  "description": "Building Jerusalem's first permanent ensemble opera company. Cultural infrastructure serving Jerusalem and the Jewish people.",
+  "url": "https://operashalem.com",
+  "logo": "https://operashalem.com/images/opera-shalem-logo.png",
+  "image": "https://operashalem.com/images/opera-shalem-logo.png",
+  "email": "info@operashalem.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Jerusalem",
+    "addressCountry": "IL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "31.7683",
+    "longitude": "35.2137"
+  },
+  "sameAs": [
+    "https://www.facebook.com/operashalem",
+    "https://www.instagram.com/operashalem",
+    "https://www.linkedin.com/company/operashalem",
+    "https://x.com/operashalem"
+  ],
+  "areaServed": {
+    "@type": "City",
+    "name": "Jerusalem"
+  },
+  "knowsAbout": [
+    "Opera",
+    "Musical Theater",
+    "Operetta",
+    "Jewish Music",
+    "Cultural Infrastructure",
+    "Ensemble Opera"
+  ]
+};
+---
+
+<Base
+  title="Opera Shalem | Cultural Infrastructure for Jerusalem"
+  description="Opera Shalem: Cultural infrastructure serving Jerusalem and the Jewish people. Building the first permanent ensemble opera company in Israel."
+  offsetNav={false}
+  structuredData={structuredData}
+>
+<main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="/images/opera-shalem-logo.png" alt="" class="hero-logo" width="500" height="444" fetchpriority="high">
+        <h1>Opera Shalem</h1>
+        <div class="hero-divider" aria-hidden="true"></div>
+        <p class="hero-subtitle">Cultural infrastructure serving Jerusalem<br>and the Jewish people</p>
+        <div class="positioning">
+            <p>Jerusalem lacks permanent cultural infrastructure in opera and music theater. Opera Shalem is building a full-scale ensemble institution — stable employment for artists, institutional continuity, and long-term cultural presence.</p>
+        </div>
+        <p class="hero-scroll" aria-hidden="true">Scroll</p>
+    </section>
+
+    <!-- The Need -->
+    <section id="need" class="section">
+        <div class="container">
+            <h2>The Need</h2>
+            <div class="content-block">
+                <p>Jerusalem, the capital of Israel, lacks a permanent opera institution. More broadly, no permanent company of opera artists and crew exists anywhere in Israel. Opera work is overwhelmingly project-based and unstable.</p>
+                
+                <p>As a result, Israeli artists leave in order to sustain professional careers abroad. At the same time, Jewish artists in the diaspora face a structural barrier: without stable professional frameworks, Aliyah is not a viable option for them as artists.</p>
+                
+                <p>What is missing is not talent, but infrastructure.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Institution -->
+    <section id="institution" class="section alt-bg">
+        <div class="container">
+            <h2>The Institution</h2>
+            <div class="content-block">
+                <p>Opera Shalem establishes a standing opera institution in Jerusalem, designed for long-term artistic development and continuity.</p>
+                
+                <p>It is founded as a permanent company (ensemble) of artists and crew, providing stable employment and professional continuity within Israel.</p>
+                
+                <p>Alongside the operatic and music-theater canon, Opera Shalem will develop new works that articulate Israeli and Jewish stories, strengthening cultural self-confidence and asserting their place within the world's highest artistic forms.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact -->
+    <section id="impact" class="section">
+        <div class="container">
+            <h2>Impact</h2>
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <h3>Talent</h3>
+                    <p>Opera Shalem enables stable professional lives for Israeli and Jewish artists, directly reducing brain drain and making Aliyah viable through long-term employment within Israel.</p>
+                </div>
+                
+                <div class="impact-item">
+                    <h3>Jerusalem</h3>
+                    <p>The institution provides the capital with cultural completeness (Shalem=complete), strengthening its international standing, tourism, and role as Israel's cultural capital.</p>
+                </div>
+                
+                <div class="impact-item">
+                    <h3>Economy</h3>
+                    <p>Culture functions as an economic engine: international public-sector studies show that each $1 invested in major cultural institutions generates ~$3 in local economic activity through jobs, tourism, and supporting services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability -->
+    <section id="sustainability" class="section alt-bg">
+        <div class="container">
+            <h2>Sustainability by Design</h2>
+            <p class="section-intro">Opera Shalem is built to last.</p>
+            
+            <div class="sustainability-grid">
+                <div class="sustainability-item">
+                    <h3>People</h3>
+                    <p>The organization is designed as a growth-oriented, supportive professional environment, allowing artists to develop across disciplines, expand responsibility over time, and remain whole human beings within their work.</p>
+                    <p>Institutional rhythms are designed to respect religious and cultural life, including Shabbat and holidays, as a foundational design principle.</p>
+                </div>
+                
+                <div class="sustainability-item">
+                    <h3>Capital</h3>
+                    <p>Financial structure combines diversified funding, earned revenue, and scalable digital systems that can be used beyond the institution, aligning artistic ambition with institutional stability.</p>
+                </div>
+                
+                <div class="sustainability-item">
+                    <h3>Systems</h3>
+                    <p>Operations are digital-first across artistic, administrative, and production workflows, developed in parallel with a net-zero facility rather than added after the fact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About</h2>
+            <div class="content-block">
+                <h3>Mission</h3>
+                <p>Opera Shalem creates cultural infrastructure for Jerusalem and the Jewish people through a permanent ensemble opera institution rooted in excellence, continuity, and cultural self-confidence.</p>
+                
+                <h3>Institutional Model</h3>
+                <p>Opera Shalem combines the Central European ensemble tradition with American and Israeli governance structures. This hybrid model balances artistic continuity with institutional flexibility and accountability.</p>
+                
+                <h3>Long-term Vision</h3>
+                <p>Opera Shalem will evolve into a multi-disciplinary performing arts institution, expanding beyond opera to encompass the full spectrum of music theater and related art forms while maintaining its core commitment to ensemble stability and artistic excellence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Model -->
+    <section id="model" class="section alt-bg">
+        <div class="container">
+            <h2>The Model</h2>
+            
+            <div class="content-block">
+                <h3>Permanent Company (Ensemble)</h3>
+                <p>Unlike project-based operations, Opera Shalem functions as a permanent company. Artists and crew maintain long-term contracts, enabling artistic growth, institutional memory, and professional stability.</p>
+                
+                <h3>Institutional Stability</h3>
+                <p>Where project-based ecosystems depend on constant deal-making and fragile funding cycles, a permanent institution creates structural continuity. This stability benefits not only artists but the broader cultural ecosystem.</p>
+                
+                <h3>Phased Growth Strategy</h3>
+                <p>Opera Shalem advances through deliberate phases:</p>
+                <ul>
+                    <li>Foundation: Legal incorporation, core leadership, capital campaign launch</li>
+                    <li>Development: Artistic planning, partnership formation, systems design</li>
+                    <li>Implementation: Facility construction, ensemble formation, repertoire development</li>
+                    <li>Operations: Full production schedule, educational programming, international partnerships</li>
+                </ul>
+                
+                <h3>Capital Path</h3>
+                <p>An initial $250k seed phase completes legal incorporation, funds core leadership, and launches the capital campaign. This phase is accessible to Zionist donors at any level, enabling broad participation without concentrating risk or control.</p>
+                
+                <p>The institution then advances through a $250M capital campaign to build a permanent, net-zero cultural institution in Jerusalem.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Tech -->
+    <section id="tech" class="section">
+        <div class="container">
+            <h2>Cultural Tech</h2>
+            <p class="section-intro">Opera Shalem redefines how a performing arts institution operates in the 21st century.</p>
+            
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <h3>Library System</h3>
+                    <p class="tech-subtitle">Artistic Content Infrastructure</p>
+                    <p>A centralized digital library for artistic materials: scores, parts, performance texts, annotations, version control, and rights-aware access for artists and staff. A single, shared source across productions.</p>
+                </div>
+                
+                <div class="tech-item">
+                    <h3>Operations System</h3>
+                    <p class="tech-subtitle">Artistic & Production Management</p>
+                    <p>A coordination layer for casting and personnel, rehearsals, productions, venues, and orchestra, chorus, stage, and technical availability. Focused on reliability and integration of existing tools.</p>
+                </div>
+                
+                <div class="tech-item">
+                    <h3>Front of House System</h3>
+                    <p class="tech-subtitle">Audience Interface</p>
+                    <p>A digital audience platform for ticketing, schedules, personal accounts, recommendations based on attendance, multilingual surtitles and accessibility, and interactive program notes and learning tools. A flexible digital layer supporting engagement and continuity.</p>
+                </div>
+            </div>
+            
+            <p class="tech-conclusion">Together, these innovative systems rework inherited operating models and position Opera Shalem as a modern cultural institution.</p>
+        </div>
+    </section>
+
+    <!-- Partner -->
+    <section id="partner" class="section alt-bg">
+        <div class="container">
+            <h2>Partner With Us</h2>
+            
+            <div class="partnership-paths">
+                <div class="path-item">
+                    <h3>Founding Support</h3>
+                    <p>Infrastructure capital that establishes permanent cultural presence in Jerusalem. Foundational investment in facilities, ensemble formation, and institutional development.</p>
+                </div>
+                
+                <div class="path-item">
+                    <h3>Strategic Connections</h3>
+                    <p>Connect Opera Shalem to aligned donors, cultural leaders, public figures, and decision-makers. Lend credibility and visibility that opens doors and anchors trust.</p>
+                </div>
+                
+                <div class="path-item">
+                    <h3>Technology Collaboration</h3>
+                    <p>Partner in developing digital systems that modernize cultural infrastructure. Expertise in library systems, production management, or audience platforms.</p>
+                </div>
+            </div>
+
+            <!-- Seed Phase Support -->
+            <div class="seed-phase">
+                <h3>Join Our Seed Phase</h3>
+                <p>We're raising $250,000 to complete legal incorporation, fund core leadership, and launch our capital campaign. This foundational phase is accessible to supporters at any level, enabling broad participation in building Jerusalem's first permanent ensemble opera company.</p>
+                <p style="margin-top: 1.5rem; font-size: 1.05rem; color: var(--royal-blue); font-weight: 500;">Interested in supporting this foundational work? Get in touch below to learn more about partnership opportunities.</p>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Get in Touch</h3>
+                <form id="partnerForm" action="/api/contact" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" autocomplete="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="interest">Area of Interest</label>
+                        <select id="interest" name="interest" required>
+                            <option value="">Select...</option>
+                            <option value="founding">Founding Support</option>
+                            <option value="connections">Strategic Connections</option>
+                            <option value="technology">Technology Collaboration</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <!-- Honeypot for spam bots; hidden from people and screen readers -->
+                    <div aria-hidden="true" style="position: absolute; left: -9999px;">
+                        <label for="website">Leave this field empty</label>
+                        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <p class="form-privacy">We use your details only to reply to your enquiry. See our <a href="/privacy-policy">Privacy Policy</a>.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+</Base>
+
+<style>
+   
+
+    /* Hero Section */
+    .hero {
+        padding: 8rem 0 0 0;
+        background-color: var(--royal-blue);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse at center, rgba(0,128,128,0.15) 0%, transparent 70%);
+        pointer-events: none;
+    }
+
+    .hero-logo {
+        width: min(500px, 85vw);
+        max-width: 500px;
+        height: auto;
+        margin-bottom: 3rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero h1 {
+        color: var(--off-white);
+        font-size: clamp(2.5rem, 5vw, 4.5rem);
+        margin-bottom: 1rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-subtitle {
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        color: var(--jerusalem-gold);
+        margin-bottom: 3rem;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        font-family: 'ITC Benguiat Std', Georgia, serif;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-divider {
+        width: 60px;
+        height: 2px;
+        background: var(--jerusalem-gold);
+        margin: 0 auto 2.5rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .positioning {
+        max-width: 680px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        line-height: 1.9;
+        color: rgba(255,255,250,0.8);
+        padding: 0 2rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-scroll {
+        margin-top: 4rem;
+        color: rgba(255,255,250,0.75);
+        font-size: 0.8rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-scroll::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 40px;
+        background: var(--jerusalem-gold);
+        margin: 0.75rem auto 0;
+        opacity: 0.5;
+    }
+
+    /* Content Blocks */
+    .content-block {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .content-block ul {
+        margin: 1.5rem 0 1.5rem 2rem;
+        line-height: 1.9;
+    }
+
+    .content-block li {
+        margin-bottom: 0.75rem;
+    }
+
+    .section-intro {
+        font-size: 1.2rem;
+        color: var(--secondary-color);
+        margin-bottom: 3rem;
+        font-style: italic;
+    }
+
+    /* Impact Grid */
+    .impact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 3rem;
+        margin-top: 3rem;
+    }
+
+    .impact-item {
+        padding: 2rem;
+        background: var(--bg-white);
+        border-left: 4px solid var(--teal);
+        box-shadow: 0 2px 8px rgba(0, 53, 102, 0.08);
+        transition: var(--transition);
+    }
+
+    .impact-item:hover {
+        box-shadow: 0 4px 16px rgba(0, 53, 102, 0.12);
+        transform: translateY(-2px);
+    }
+
+    .impact-item h3 {
+        margin-top: 0;
+        color: var(--teal);
+    }
+
+    /* Sustainability Grid */
+    .sustainability-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 3rem;
+        margin-top: 3rem;
+    }
+
+    .sustainability-item {
+        position: relative;
+        padding-top: 3rem;
+    }
+
+    .sustainability-item::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 4px;
+        background: var(--jerusalem-gold);
+    }
+
+    .sustainability-item h3 {
+        margin-top: 0;
+        color: var(--royal-blue);
+    }
+
+    /* Tech Grid */
+    .tech-grid {
+        display: grid;
+        gap: 3rem;
+        margin: 3rem 0;
+    }
+
+    .tech-item {
+        padding: 2rem 0;
+        border-top: 2px solid var(--jerusalem-gold);
+    }
+
+    .tech-item:last-child {
+        border-bottom: 2px solid var(--jerusalem-gold);
+    }
+
+    .tech-item h3 {
+        margin-top: 0;
+        color: var(--royal-blue);
+    }
+
+    .tech-subtitle {
+        font-size: 0.95rem;
+        color: var(--secondary-color);
+        font-style: italic;
+        margin-bottom: 1rem;
+    }
+
+    .tech-conclusion {
+        font-size: 1.1rem;
+        color: var(--secondary-color);
+        font-style: italic;
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    /* Partnership Paths */
+    .partnership-paths {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 3rem;
+        margin: 3rem 0 4rem;
+    }
+
+    .path-item h3 {
+        margin-top: 0;
+        color: var(--teal);
+    }
+
+    /* Seed Phase Section */
+    .seed-phase {
+        max-width: 800px;
+        margin: 5rem auto 4rem;
+        padding: 3rem;
+        background: linear-gradient(135deg, var(--off-white) 0%, var(--bg-white) 100%);
+        border: 2px solid var(--jerusalem-gold);
+        border-radius: 4px;
+    }
+
+    .seed-phase h3 {
+        margin-top: 0;
+        color: var(--royal-blue);
+        text-align: center;
+    }
+
+    .seed-phase p {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        max-width: 600px;
+        margin: 4rem auto 0;
+        padding: 3rem;
+        background-color: var(--bg-white);
+        border: 1px solid var(--border-color);
+    }
+
+    .contact-form h3 {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+        letter-spacing: 0.02em;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid var(--border-color);
+        font-family: inherit;
+        font-size: 1rem;
+        background-color: var(--bg-white);
+        transition: var(--transition);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        border-color: var(--royal-blue);
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 1rem;
+        background-color: var(--royal-blue);
+        color: var(--bg-white);
+        border: none;
+        font-family: inherit;
+        font-size: 1rem;
+        letter-spacing: 0.05em;
+        cursor: pointer;
+        transition: var(--transition);
+    }
+
+    .submit-btn:hover {
+        background-color: var(--teal);
+    }
+
+    .form-privacy {
+        margin: 1rem 0 0;
+        font-size: 0.85rem;
+        color: var(--secondary-color);
+        text-align: center;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .impact-grid,
+        .sustainability-grid,
+        .partnership-paths {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        
+        .contact-form {
+            padding: 2rem 1.5rem;
+        }
+        
+        .container {
+            padding: 0 1.5rem;
+        }
+    }
+</style>
+
+<script>
+  // Highlight the nav link for the section in view
+  const sections = document.querySelectorAll<HTMLElement>('main section[id]');
+  const navLinks = document.querySelectorAll<HTMLAnchorElement>('.nav-links a');
+  const observer = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        navLinks.forEach((link) => {
+          link.classList.toggle('active', link.hash === `#${entry.target.id}`);
+        });
+      }
+    },
+    { rootMargin: '-45% 0px -50% 0px' },
+  );
+  sections.forEach((section) => observer.observe(section));
+
+  // Contact form: post to the Worker and report the result
+  const form = document.getElementById('partnerForm') as HTMLFormElement;
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const button = form.querySelector<HTMLButtonElement>('.submit-btn')!;
+    const label = button.textContent;
+    button.disabled = true;
+    button.textContent = 'Sending...';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: new FormData(form),
+      });
+      const result = await response.json();
+      alert(result.message);
+      if (response.ok && result.success) form.reset();
+    } catch {
+      alert('Failed to send message. Please email us directly at info@operashalem.com');
+    } finally {
+      button.disabled = false;
+      button.textContent = label;
+    }
+  });
+</script>

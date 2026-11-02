@@ -1,0 +1,95 @@
+---
+interface Props {
+  // Which top-level link to mark as the current page
+  current?: 'blog';
+}
+
+const { current } = Astro.props;
+
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/#about', label: 'About' },
+  { href: '/#model', label: 'The Model' },
+  { href: '/#tech', label: 'Cultural Tech' },
+  { href: '/blog', label: 'Blog', key: 'blog' },
+  { href: '/#partner', label: 'Partner' },
+];
+---
+
+<nav class="main-nav" aria-label="Main">
+  <div class="nav-container">
+    <a href="/" class="logo">
+      <img src="/images/opera-shalem-logo.png" alt="Opera Shalem home" width="63" height="56">
+    </a>
+    <ul class="nav-links">
+      {links.map((link) => (
+        <li>
+          <a href={link.href} aria-current={link.key && link.key === current ? 'page' : undefined}>
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+    <button class="hamburger" id="menuOpen" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Menu">
+  <button class="mobile-nav-close" id="menuClose" aria-label="Close menu">&times;</button>
+  <ul>
+    {links.map((link) => (
+      <li><a href={link.href}>{link.label}</a></li>
+    ))}
+  </ul>
+</div>
+
+<script>
+  const nav = document.getElementById('mobileNav')!;
+  const openButton = document.getElementById('menuOpen')!;
+  const closeButton = document.getElementById('menuClose')!;
+
+  function openMenu() {
+    nav.classList.add('open');
+    document.body.classList.add('menu-open');
+    openButton.setAttribute('aria-expanded', 'true');
+    nav.querySelector('a')?.focus();
+  }
+
+  function closeMenu({ restoreFocus = true } = {}) {
+    nav.classList.remove('open');
+    document.body.classList.remove('menu-open');
+    openButton.setAttribute('aria-expanded', 'false');
+    if (restoreFocus) openButton.focus();
+  }
+
+  openButton.addEventListener('click', openMenu);
+  closeButton.addEventListener('click', () => closeMenu());
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => closeMenu({ restoreFocus: false }));
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (!nav.classList.contains('open')) return;
+    if (event.key === 'Escape') {
+      closeMenu();
+      return;
+    }
+    // Keep Tab inside the open menu
+    if (event.key === 'Tab') {
+      const focusable = [closeButton, ...nav.querySelectorAll('a')] as HTMLElement[];
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
+  });
+</script>

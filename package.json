@@ -1,0 +1,19 @@
+{
+  "name": "operashalem",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "check": "astro check && tsc --noEmit -p worker"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@cloudflare/workers-types": "^5.20261102.1",
+    "astro": "^7.4.4",
+    "typescript": "^6.0.3",
+    "wrangler": "^4.156.1"
+  }
+}
