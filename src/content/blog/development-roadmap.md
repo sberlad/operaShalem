@@ -18,7 +18,7 @@ featured: true
 
 <h3>What This Funding Enables</h3>
 
-<p><strong>Core Team Formation ($120K):</strong> Our <a href="/#about">founding leadership team</a>, working part-time on institutional development. This allows strategic planning, donor cultivation, and partnership building without rushing to operations before foundation is solid.</p>
+<p><strong>Core Team Formation ($120K):</strong> Our <a href="/#company">founding leadership team</a>, working part-time on institutional development. This allows strategic planning, donor cultivation, and partnership building without rushing to operations before foundation is solid.</p>
 
 <p><strong>Legal Infrastructure ($40K):</strong> Proper incorporation in Israel, governance structure, board development, compliance frameworks, and legal protections. Boring but essential. Skipping this creates problems that multiply exponentially later.</p>
 
@@ -54,9 +54,9 @@ featured: true
 
 <p><strong>Initial Programming ($800K):</strong> Not full productions yet—strategic programming that builds audience, tests artistic concepts, and demonstrates viability. This might include concert performances, semi-staged works, educational programming, and community engagement.</p>
 
-<p><strong>Artist Development ($300K):</strong> Begin relationship-building with singers, conductors, and directors who will form our eventual <a href="/#model">permanent ensemble</a>. This includes workshops, masterclasses, and collaborative artistic development.</p>
+<p><strong>Artist Development ($300K):</strong> Begin relationship-building with singers, conductors, and directors who will form our eventual <a href="/#house">permanent ensemble</a>. This includes workshops, masterclasses, and collaborative artistic development.</p>
 
-<p><strong>Facility Planning ($400K):</strong> Architectural planning, site selection, zoning negotiations, and environmental studies for our eventual permanent home. The <a href="/#institution">conceptual rendering</a> guides vision, but detailed planning requires professional architects and urban planners.</p>
+<p><strong>Facility Planning ($400K):</strong> Architectural planning, site selection, zoning negotiations, and environmental studies for our eventual permanent home. The <a href="/#company">conceptual rendering</a> guides vision, but detailed planning requires professional architects and urban planners.</p>
 
 <p><strong>Endowment Start ($400K):</strong> Begin building endowment that will eventually provide 30-40% of annual operating budget. Patient capital now prevents desperation fundraising later.</p>
 
@@ -112,7 +112,7 @@ featured: true
 
 <p><strong>Community Campaign (10%):</strong> $25M from broader community support—hundreds or thousands of smaller donors committed to Jerusalem's cultural completeness.</p>
 
-<p><strong>Corporate Partnership (5%):</strong> $12.5M from corporations benefiting from Jerusalem's cultural development and seeking <a href="/#sustainability">association with sustainable cultural institution</a>.</p>
+<p><strong>Corporate Partnership (5%):</strong> $12.5M from corporations benefiting from Jerusalem's cultural development and seeking <a href="/#design">association with sustainable cultural institution</a>.</p>
 
 <h2>Phase Four: Inaugural Operations (2033+)</h2>
 

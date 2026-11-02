@@ -26,7 +26,7 @@ featured: true
 
 <h3>From Donors and Partners</h3>
 
-<p>Many asked practical questions: What's the timeline? What's the capital requirement? How does <a href="/#model">an ensemble model</a> differ from project-based opera?</p>
+<p>Many asked practical questions: What's the timeline? What's the capital requirement? How does <a href="/#house">an ensemble model</a> differ from project-based opera?</p>
 
 <p>But more importantly, several expressed something deeper: a sense that Jerusalem <em>should</em> have an opera house. That cultural completeness (shalem) matters. That a capital city without permanent cultural institutions feels incomplete.</p>
 
@@ -34,7 +34,7 @@ featured: true
 
 <p>Residents of Jerusalem wrote with both excitement and skepticism. Excitement that someone was thinking seriously about cultural infrastructure. Skepticism that anything could actually get built in a city notorious for bureaucratic complexity.</p>
 
-<p>These responses were valuable. They reminded us that Opera Shalem must earn its place in the city—not through grandiose claims, but through thoughtful development, community engagement, and demonstrated commitment to <a href="/#sustainability">sustainability</a>.</p>
+<p>These responses were valuable. They reminded us that Opera Shalem must earn its place in the city—not through grandiose claims, but through thoughtful development, community engagement, and demonstrated commitment to <a href="/#design">sustainability</a>.</p>
 
 <h2>How Your Feedback Is Shaping Our Work</h2>
 
@@ -48,7 +48,7 @@ featured: true
 
 <p>Several responses asked for clarity about our development path. Here it is:</p>
 
-<p><strong>Phase 1 (Current):</strong> $250k seed phase for legal incorporation, <a href="/#about">core team</a> formation, and capital campaign launch.</p>
+<p><strong>Phase 1 (Current):</strong> $250k seed phase for legal incorporation, <a href="/#company">core team</a> formation, and capital campaign launch.</p>
 
 <p><strong>Phase 2:</strong> Artistic planning, partnership development, site selection, and architectural feasibility studies.</p>
 
@@ -60,7 +60,7 @@ featured: true
 
 <h3>We're Emphasizing Cultural Infrastructure</h3>
 
-<p>Many respondents resonated with the phrase 'cultural infrastructure.' It captures something important: this isn't a startup or a project. It's permanent <a href="/#about">institutional development</a>.</p>
+<p>Many respondents resonated with the phrase 'cultural infrastructure.' It captures something important: this isn't a startup or a project. It's permanent <a href="/#company">institutional development</a>.</p>
 
 <p>We're studying successful models—European opera houses with centuries of history, American companies with strong governance, Israeli cultural institutions that have achieved sustainability—and adapting what works for Jerusalem's unique context.</p>
 

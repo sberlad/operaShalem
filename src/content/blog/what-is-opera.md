@@ -54,6 +54,6 @@ featured: false
 
 <h3>What We're Building</h3>
 
-<p>Our <a href="/#about">vision</a> includes works from the established operatic canon approached with fresh dramaturgical perspective, new Jewish operas that speak to <a href="/#tech">historical and contemporary experience</a>, operetta and musical theater reimagined as part of the Israeli cultural fabric, and intercultural collaboration with artists across traditions and genres.</p>
+<p>Our <a href="/#company">vision</a> includes works from the established operatic canon approached with fresh dramaturgical perspective, new Jewish operas that speak to <a href="/#design">historical and contemporary experience</a>, operetta and musical theater reimagined as part of the Israeli cultural fabric, and intercultural collaboration with artists across traditions and genres.</p>
 
 <p>Opera is uniquely capable of expressing the unspeakable. That's why it's endured across centuries and cultures. And that's why we believe it's the right form for the Jewish stories we need to tell now.</p>

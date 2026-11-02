@@ -22,7 +22,7 @@ featured: true
 
 <p>Central to our vision is building a net-zero opera house that will utilize sustainable energy to power the entire facility, reflecting our commitment to environmental responsibility alongside artistic excellence.</p>
 
-<p>Just as innovative as our sustainability approach is our reimagining of <a href="/#model">traditional opera company structure</a>. Opera Shalem is redefining career development in the performing arts by fostering a fluid, collaborative environment where artists can evolve beyond rigid hierarchies.</p>
+<p>Just as innovative as our sustainability approach is our reimagining of <a href="/#house">traditional opera company structure</a>. Opera Shalem is redefining career development in the performing arts by fostering a fluid, collaborative environment where artists can evolve beyond rigid hierarchies.</p>
 
 <p>Singers may shift between chorus and soloist roles. Musicians can explore conducting or composition. Designers can transition across disciplines. We welcome everyone to come as they are, so long as they adhere to the values of our organization.</p>
 
@@ -52,7 +52,7 @@ featured: true
 
 <p>Opera Shalem envisions a different approach: a dedicated ensemble in Jerusalem, creating deeper artistic relationships and a stronger cultural community.</p>
 
-<h3><a href="/#model">The Ensemble Model</a></h3>
+<h3><a href="/#house">The Ensemble Model</a></h3>
 
 <p>A resident ensemble approach offers several key advantages:</p>
 

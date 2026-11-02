@@ -46,7 +46,7 @@ featured: false
 
 <p>The Jerusalem Academy of Music and Dance produces excellent instrumentalists and performers across various disciplines, yet the absence of professional opera in the city means these graduates lack local opportunities for career development.</p>
 
-<p>The creation of a <a href="/#model">professional opera company</a> requires not just vocal performers, but also orchestral musicians, designers, directors, technicians, administrators, and creative professionals—creating a comprehensive ecosystem that can sustain a diverse artistic community.</p>
+<p>The creation of a <a href="/#house">professional opera company</a> requires not just vocal performers, but also orchestral musicians, designers, directors, technicians, administrators, and creative professionals—creating a comprehensive ecosystem that can sustain a diverse artistic community.</p>
 
 <h2>The Vision for Opera Shalem</h2>
 

@@ -12,7 +12,7 @@ featured: true
 
 <p>When Opera Shalem launched in 2024, we imagined a straightforward path: raise seed funding, incorporate legally, hire core staff, and open in 2027. Simple, direct, achievable.</p>
 
-<p>Reality proved more complex. Building permanent <a href="/#about">cultural infrastructure</a> in Jerusalem—Israel's first professional ensemble opera company since 1982—requires different thinking than launching a startup or producing a single season.</p>
+<p>Reality proved more complex. Building permanent <a href="/#company">cultural infrastructure</a> in Jerusalem—Israel's first professional ensemble opera company since 1982—requires different thinking than launching a startup or producing a single season.</p>
 
 <p>A year later, we're still in seed phase. We haven't opened. We haven't hired a full permanent staff. We haven't broken ground on a facility.</p>
 
@@ -54,7 +54,7 @@ featured: true
 
 <p>We resisted pressure to produce shows before building institutional foundation. Many suggested: "Just do a production! Show what you can do!"</p>
 
-<p>But one-off productions don't build permanent infrastructure. They might generate buzz but won't create the <a href="/#model">ensemble model</a> we're committed to. We stayed focused on institutional development rather than individual events.</p>
+<p>But one-off productions don't build permanent infrastructure. They might generate buzz but won't create the <a href="/#house">ensemble model</a> we're committed to. We stayed focused on institutional development rather than individual events.</p>
 
 <h3>Quality Over Speed</h3>
 
@@ -66,7 +66,7 @@ featured: true
 
 <p><strong>Legal structure done right:</strong> Proper incorporation, governance, compliance—boring but essential.</p>
 
-<p><strong>Team development:</strong> <a href="/#about">Bringing together experienced leadership</a> who understand both opera and institutional sustainability.</p>
+<p><strong>Team development:</strong> <a href="/#company">Bringing together experienced leadership</a> who understand both opera and institutional sustainability.</p>
 
 <h3>Transparency About Phase</h3>
 
@@ -114,7 +114,7 @@ featured: true
 
 <h3>Architectural Vision</h3>
 
-<p>We're developing clearer vision for our eventual facility. Our <a href="/#institution">conceptual rendering</a> shows a building that honors Jerusalem's architectural heritage while providing world-class performance infrastructure.</p>
+<p>We're developing clearer vision for our eventual facility. Our <a href="/#company">conceptual rendering</a> shows a building that honors Jerusalem's architectural heritage while providing world-class performance infrastructure.</p>
 
 <p>But we're not rushing to build. First comes financial sustainability, proven operational model, and community support. Then comes brick and mortar.</p>
 

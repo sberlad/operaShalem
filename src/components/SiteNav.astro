@@ -6,11 +6,12 @@ interface Props {
 
 const { current } = Astro.props;
 
+// The logo links home, so there is no separate Home item
 const links = [
-  { href: '/', label: 'Home' },
-  { href: '/#about', label: 'About' },
-  { href: '/#model', label: 'The Model' },
-  { href: '/#tech', label: 'Cultural Tech' },
+  { href: '/#why', label: 'Why Jerusalem' },
+  { href: '/#company', label: 'The Company' },
+  { href: '/#house', label: 'The House' },
+  { href: '/#impact', label: 'Impact' },
   { href: '/blog', label: 'Blog', key: 'blog' },
   { href: '/#partner', label: 'Partner' },
 ];

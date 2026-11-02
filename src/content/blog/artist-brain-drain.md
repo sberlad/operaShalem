@@ -44,7 +44,7 @@ featured: false
 
 <h2>What Opera Shalem Is Building</h2>
 
-<p>This is why <a href="/#model">Opera Shalem's ensemble model</a> matters.</p>
+<p>This is why <a href="/#house">Opera Shalem's ensemble model</a> matters.</p>
 
 <p>We're not just producing shows. We're building an institution where singers, musicians, and technicians can build careers <em>in Jerusalem</em>. Where young Israeli graduates don't have to choose between their homeland and their profession. Where Jewish artists from around the world can make aliyah without sacrificing their artistic lives.</p>
 
@@ -66,6 +66,6 @@ featured: false
 
 <p>Opera Shalem is that infrastructure.</p>
 
-<p>Learn more about our <a href="/#institution">vision for Jerusalem's cultural future</a>, explore <a href="/#sustainability">our sustainable funding model</a>, or read about <a href="/#about">the team building this institution</a>.</p>
+<p>Learn more about our <a href="/#company">vision for Jerusalem's cultural future</a>, explore <a href="/#design">our sustainable funding model</a>, or read about <a href="/#company">the team building this institution</a>.</p>
 
 <p>Want to support this work? <a href="/#partner">Partner with us</a> or <a href="/#partner">get in touch</a>.</p>

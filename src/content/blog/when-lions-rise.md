@@ -22,13 +22,13 @@ featured: false
 
 <h2>Culture as Resistance</h2>
 
-<p>When we <a href="/#about">founded Opera Shalem</a>, we understood something profound: creating authentic Jewish art isn't just cultural work. It's an act of resistance. Every Jewish story told with pride, every Hebrew melody that rises from Jerusalem's ancient stones, every artist who chooses homeland over exile is a declaration that we will not be silenced.</p>
+<p>When we <a href="/#company">founded Opera Shalem</a>, we understood something profound: creating authentic Jewish art isn't just cultural work. It's an act of resistance. Every Jewish story told with pride, every Hebrew melody that rises from Jerusalem's ancient stones, every artist who chooses homeland over exile is a declaration that we will not be silenced.</p>
 
 <p>The Lion of Judah doesn't just defend territory. It defends identity.</p>
 
 <h2>The Symbol of Opera Shalem</h2>
 
-<p>Our <a href="/#about">Opera Shalem logo</a> captures this perfectly: the Lion of Judah from Jerusalem's crest, holding a lyre, his head raised in song. We chose this ancient symbol of our holy city because it represents everything we stand for.</p>
+<p>Our <a href="/#company">Opera Shalem logo</a> captures this perfectly: the Lion of Judah from Jerusalem's crest, holding a lyre, his head raised in song. We chose this ancient symbol of our holy city because it represents everything we stand for.</p>
 
 <p>This isn't just artistic symbolism—it's a declaration. Where others see the lion only as a warrior, we see the complete picture: strength and beauty, power and creativity, defense and expression united in one magnificent creature. The lion that defends also creates. The lion that roars also sings.</p>
 
@@ -50,7 +50,7 @@ featured: false
 
 <h2>The Sound of Defiance</h2>
 
-<p>When <a href="/#institution">Opera Shalem's curtain rises</a>, it will carry a message that echoes far beyond Jerusalem: Jewish culture will not be diminished, Jewish voices will not be silenced, and Jewish stories will be told with the full power and beauty they deserve.</p>
+<p>When <a href="/#company">Opera Shalem's curtain rises</a>, it will carry a message that echoes far beyond Jerusalem: Jewish culture will not be diminished, Jewish voices will not be silenced, and Jewish stories will be told with the full power and beauty they deserve.</p>
 
 <p>But it will also demonstrate something else: that even in the darkest times, we choose to create light for others to follow.</p>
 

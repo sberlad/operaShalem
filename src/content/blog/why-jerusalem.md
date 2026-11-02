@@ -38,7 +38,7 @@ featured: false
 
 <h2>The Ensemble Model Needs Stability</h2>
 
-<p>There's a practical reason too: the <a href="/#model">ensemble opera model</a> requires institutional stability.</p>
+<p>There's a practical reason too: the <a href="/#house">ensemble opera model</a> requires institutional stability.</p>
 
 <p>In project-based opera (the dominant model in Israel), companies hire singers for individual productions, then disband. Artists live freelance lives, constantly auditioning, traveling, piecing together seasons.</p>
 
@@ -84,4 +84,4 @@ featured: false
 <p>Because Jerusalem deserves cultural completeness.</p>
 <p>Because the Jewish people deserve to create, not just consume, the world's highest art forms.</p>
 
-<p>Opera Shalem exists to make that real. <a href="/#about">Learn more about our team</a>.</p>
+<p>Opera Shalem exists to make that real. <a href="/#company">Learn more about our team</a>.</p>

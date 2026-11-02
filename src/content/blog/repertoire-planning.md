@@ -12,7 +12,7 @@ featured: true
 
 <p>Every season, opera companies worldwide make similar decisions: which works to perform, in what order, with which artists, at what budget. These choices shape what audiences experience, which artists get opportunities, and which works enter or remain in the active repertoire.</p>
 
-<p>For emerging companies like <a href="/#about">Opera Shalem</a>, repertoire planning is especially critical. Our early seasons will establish artistic identity, build audience, and demonstrate viability. These aren't just programming decisions—they're strategic institutional development.</p>
+<p>For emerging companies like <a href="/#company">Opera Shalem</a>, repertoire planning is especially critical. Our early seasons will establish artistic identity, build audience, and demonstrate viability. These aren't just programming decisions—they're strategic institutional development.</p>
 
 <h2>The Multiple Factors</h2>
 
@@ -30,7 +30,7 @@ featured: true
 
 <p>A company with a strong dramatic soprano might program <em>Tosca</em>, <em>Turandot</em>, or Strauss. Without that voice type, those works become harder to cast well.</p>
 
-<p>For <a href="/#model">Opera Shalem's ensemble model</a>, this works differently. We'll build the ensemble first, then program to showcase their strengths while pushing artistic growth.</p>
+<p>For <a href="/#house">Opera Shalem's ensemble model</a>, this works differently. We'll build the ensemble first, then program to showcase their strengths while pushing artistic growth.</p>
 
 <h3>Production Costs</h3>
 
@@ -112,7 +112,7 @@ featured: true
 
 <h2>Opera Shalem's Repertoire Vision</h2>
 
-<p>Our <a href="/#tech">programming philosophy</a> balances several principles:</p>
+<p>Our <a href="/#design">programming philosophy</a> balances several principles:</p>
 
 <p><strong>Canonical Foundation:</strong> Core repertoire performed at highest level, demonstrating we can deliver Mozart, Verdi, and Puccini excellently.</p>
 

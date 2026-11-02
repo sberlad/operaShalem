@@ -54,7 +54,7 @@ featured: false
 
 <h2>Opera Shalem's Approach</h2>
 
-<p>At <a href="/#about">Opera Shalem</a>, we're committed to developing Jewish operatic voice through multiple approaches:</p>
+<p>At <a href="/#company">Opera Shalem</a>, we're committed to developing Jewish operatic voice through multiple approaches:</p>
 
 <p><strong>Commissioning new works</strong> by composers and librettists who bring Jewish sensibility to their craft, whether or not the works have explicitly Jewish content.</p>
 
@@ -62,7 +62,7 @@ featured: false
 
 <p><strong>Engaging with Jewish musical traditions</strong> not through superficial quotation but through deep structural influence. How do cantorial modal systems reshape harmonic language? How does Klezmer ornamentation inform vocal writing?</p>
 
-<p><strong>Building <a href="/#model">institutional structures</a></strong> that reflect Jewish values: Shabbat observance affecting rehearsal schedules, collaborative rather than hierarchical artistic processes, commitment to economic sustainability for artists.</p>
+<p><strong>Building <a href="/#house">institutional structures</a></strong> that reflect Jewish values: Shabbat observance affecting rehearsal schedules, collaborative rather than hierarchical artistic processes, commitment to economic sustainability for artists.</p>
 
 <h2>No Single Answer</h2>
 
@@ -72,4 +72,4 @@ featured: false
 
 <p>As we develop Opera Shalem's repertoire and artistic identity, we're guided not by rigid definitions but by serious engagement with the question itself. What stories do we need to tell? What sounds carry our cultural memory? What artistic traditions can we draw from and contribute to?</p>
 
-<p>Jewish opera, like <a href="/#tech">Jewish culture</a> itself, is something we create through the doing. And in Jerusalem—the city that has inspired Jewish creativity for millennia—we're building the institutional home where that creation can flourish for generations to come.</p>
+<p>Jewish opera, like <a href="/#design">Jewish culture</a> itself, is something we create through the doing. And in Jerusalem—the city that has inspired Jewish creativity for millennia—we're building the institutional home where that creation can flourish for generations to come.</p>

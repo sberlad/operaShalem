@@ -8,13 +8,13 @@ tags: ["Ensemble", "Institutional Model", "Sustainability"]
 readTime: 3
 featured: false
 ---
-<p>In the world of opera, the term 'ensemble' carries multiple meanings. In traditional <a href="https://en.wikipedia.org/wiki/List_of_opera_companies_in_Europe" target="_blank" rel="noopener">European companies</a>—particularly in German-speaking countries—it refers to a resident company of artists who collaborate across multiple productions and seasons. At <a href="/#model">Opera Shalem</a>, the ensemble represents something deeper: a dynamic, evolving artistic community where musicians, singers, and creative professionals not only collaborate and grow but actively push the boundaries of what an opera company can be.</p>
+<p>In the world of opera, the term 'ensemble' carries multiple meanings. In traditional <a href="https://en.wikipedia.org/wiki/List_of_opera_companies_in_Europe" target="_blank" rel="noopener">European companies</a>—particularly in German-speaking countries—it refers to a resident company of artists who collaborate across multiple productions and seasons. At <a href="/#house">Opera Shalem</a>, the ensemble represents something deeper: a dynamic, evolving artistic community where musicians, singers, and creative professionals not only collaborate and grow but actively push the boundaries of what an opera company can be.</p>
 
 <h2>The Difference an Ensemble Model Makes</h2>
 
 <p>In many modern opera houses, singers are hired for a single production, traveling from city to city and working with new colleagues each time. While this system can produce remarkable performances, it lacks continuity. Artists don't have time to build deep connections, and every new production feels like starting from scratch.</p>
 
-<p>The ensemble model remains vibrant in <a href="https://miz.org/en/articles/music-theatre" target="_blank" rel="noopener">Germany and other German-speaking countries</a>, attracting singers from around the world seeking economic stability. However, this traditional system can often feel restricting. At Opera Shalem, we're reimagining this tradition, grounded in our core values: <a href="/#sustainability">economic and ecological sustainability</a>, <a href="/#about">kindness, multicultural dialogue, and fostering growth</a>.</p>
+<p>The ensemble model remains vibrant in <a href="https://miz.org/en/articles/music-theatre" target="_blank" rel="noopener">Germany and other German-speaking countries</a>, attracting singers from around the world seeking economic stability. However, this traditional system can often feel restricting. At Opera Shalem, we're reimagining this tradition, grounded in our core values: <a href="/#design">economic and ecological sustainability</a>, <a href="/#company">kindness, multicultural dialogue, and fostering growth</a>.</p>
 
 <p>As a resident ensemble, we aren't just performers who gather for a single show and then disperse—we are a team, constantly evolving, learning from one another, and pushing artistic boundaries. Instead of spending rehearsals adjusting to new cast dynamics, we already share an artistic language and deep trust, allowing us to focus on bold storytelling and innovation.</p>
 
@@ -40,4 +40,4 @@ featured: false
 
 <p>Opera Shalem is pioneering a different model—one rooted in stability, creativity, and inclusivity. It's an opera company where singers don't just perform together; they grow together. Where artistic risks are encouraged, not feared. Where the connection between the performers and the community is real and lasting.</p>
 
-<p>We are not just making opera; we are <a href="/#about">shaping the future</a> of what an opera company can be. And in doing so, we are proving that opera in Israel doesn't have to follow the old models—it can be something entirely new.</p>
+<p>We are not just making opera; we are <a href="/#company">shaping the future</a> of what an opera company can be. And in doing so, we are proving that opera in Israel doesn't have to follow the old models—it can be something entirely new.</p>
