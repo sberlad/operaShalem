@@ -1,0 +1,19 @@
+# Old .html URLs from the IONOS site -> clean URLs
+/index.html / 301
+/blog.html /blog 301
+/privacy-policy.html /privacy-policy 301
+/terms-conditions.html /terms-conditions 301
+/blog/artist-brain-drain.html /blog/artist-brain-drain 301
+/blog/cultural-infrastructure.html /blog/cultural-infrastructure 301
+/blog/cultural-significance.html /blog/cultural-significance 301
+/blog/development-roadmap.html /blog/development-roadmap 301
+/blog/ensemble-model.html /blog/ensemble-model 301
+/blog/repertoire-planning.html /blog/repertoire-planning 301
+/blog/what-is-opera.html /blog/what-is-opera 301
+/blog/what-makes-jewish-opera-jewish.html /blog/what-makes-jewish-opera-jewish 301
+/blog/when-lions-rise.html /blog/when-lions-rise 301
+/blog/why-jerusalem.html /blog/why-jerusalem 301
+/blog/year-one-learnings.html /blog/year-one-learnings 301
+/blog/your-voice-shaped-our-vision.html /blog/your-voice-shaped-our-vision 301
+/admin / 301
+/admin/* / 301

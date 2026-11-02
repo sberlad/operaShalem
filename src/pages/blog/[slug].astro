@@ -1,0 +1,71 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import '../../styles/post.css';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const { title, description, excerpt, date, updated, category, tags, readTime } = post.data;
+
+const isoDate = (d: Date) => d.toISOString().slice(0, 10);
+const displayDate = date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: '2-digit', timeZone: 'UTC' });
+const url = new URL(`/blog/${post.id}`, Astro.site).href;
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: title,
+  description,
+  author: { '@type': 'Organization', name: 'Opera Shalem', url: 'https://operashalem.com' },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Opera Shalem',
+    logo: { '@type': 'ImageObject', url: 'https://operashalem.com/images/opera-shalem-logo.png' },
+  },
+  datePublished: isoDate(date),
+  dateModified: isoDate(updated ?? date),
+  mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+  articleSection: category,
+  keywords: tags.join(', '),
+};
+---
+
+<Base title={`${title} | Opera Shalem`} description={description} ogType="article" current="blog" structuredData={structuredData}>
+  <main>
+    <article class="blog-post-page">
+      <a href="/blog" class="back-link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        <span>Back to Blog</span>
+      </a>
+
+      <header class="post-header">
+        <span class="post-category">{category}</span>
+        <h1 class="post-title">{title}</h1>
+        <div class="post-meta">
+          <time class="post-date" datetime={isoDate(date)}>{displayDate}</time>
+          <span class="post-author">Opera Shalem</span>
+          <span class="post-read-time">{readTime} min read</span>
+        </div>
+        <p class="post-excerpt">{excerpt}</p>
+      </header>
+
+      <div class="post-content">
+        <Content />
+      </div>
+
+      <footer class="post-footer">
+        <div class="post-tags">
+          {tags.map((tag) => <span class="tag">{tag}</span>)}
+        </div>
+        <a href="/blog" class="back-to-blog">← Back to Blog</a>
+      </footer>
+    </article>
+  </main>
+</Base>
